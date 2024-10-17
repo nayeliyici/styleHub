@@ -1,0 +1,63 @@
+.imgWorker {
+    max-height: 200px;
+    width: 100%; 
+    object-fit: cover; 
+}
+
+.imgService {
+    max-height: 150px;
+    width: 500px; 
+    object-fit: cover; 
+}
+
+.title {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+
+.iconStart {
+    color: #CC00FF;
+    margin-left: 170px;
+}
+
+.rating-container {
+    display: flex;           
+    align-items: center;  
+}
+
+.iconStart {
+    margin-right: 8px;     
+}
+
+h5 {
+    margin-left: 30px !important;      
+    margin: 0;           
+}
+
+.calendar {
+    margin-left: 35px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;  
+    margin-top: 20px;     
+}
+
+.reqDate {
+    --background: #CC00FF;
+    color: #fff;
+}
+
+.arrow-round-back {
+    --background: #fff;
+}
+
+.domicilio {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-left: 15px;
+    font-style: italic;
+}

@@ -1,0 +1,16 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button class="menuButton"></ion-menu-button>
+    </ion-buttons>
+    <ion-title class="titleLogo">
+      <img src="assets/img/logo.png" class="imgLogo">STYLEHUB
+      <ion-icon name="person" class="iconPerson" id="popover-button"></ion-icon>
+      <ion-popover trigger="popover-button" side="bottom" alignment="center" [dismissOnSelect]="true">
+        <ng-template>
+          <ion-content class="ion-padding pop" (click)="closeSession()">Cerrar Sesión</ion-content>
+        </ng-template>
+      </ion-popover>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>

@@ -1,0 +1,24 @@
+.iconStart {
+    color: #CC00FF !important;
+}
+
+.imgWorker {
+    height: 170px;
+    min-width: 200px; 
+    object-fit: cover; 
+    border-radius: 5px; 
+}
+
+.subtitle {
+    font-style: italic;
+    font-size: 13px;
+}
+
+.buttonMore {
+    --background: #CC00FF !important;
+    display: flex;
+}
+
+.containerCard {
+    text-align: center;
+}

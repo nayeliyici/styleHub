@@ -1,0 +1,26 @@
+<ion-content [fullscreen]="true">
+  <ion-title class="title">STYLEHUB</ion-title>
+  <div class="m-5">
+    <ion-select class="select" label="Tipo de Servicio">
+      <ion-select-option value="apples" class="option">Barbería</ion-select-option>
+      <ion-select-option value="oranges" class="option">Manicura</ion-select-option>
+    </ion-select>
+    <ion-input type="email" fill="solid" label="Nombre" labelPlacement="floating" errorText="Nombre Invalido"
+      [(ngModel)]="userName" name></ion-input>
+    <ion-input class="mt-2" type="text" fill="solid" label="Domicilio" labelPlacement="floating"
+      errorText="Domicilio Invalido" [(ngModel)]="domicilio" name></ion-input>
+    <ion-input class="mt-2" type="email" fill="solid" label="Email" labelPlacement="floating"
+      errorText="Correo Invalido" [(ngModel)]="userEmail" email></ion-input>
+    <ion-input class="mt-2" type="number" fill="solid" label="Telefono" labelPlacement="floating"
+      errorText="Telefono Invalido" [(ngModel)]="phone"></ion-input>
+    <ion-input class="mt-2" type="password" fill="solid" label="Contraseña" labelPlacement="floating"
+      errorText="Contraseña invalida" [(ngModel)]="userPassword"></ion-input>
+    <ion-input class="mt-2" type="file" fill="solid" label="Fotografía" labelPlacement="floating"
+      [(ngModel)]="foto" name></ion-input>
+    <ion-button class="buttonSession" expand="block" fill="solid"
+      [disabled]="userEmail.length < 5 || userPassword.length < 8" routerLink="/login">
+      Solicitar
+    </ion-button>
+    <h6 class="leyend">¿Ya tienes una cuenta? <a href="/login">Inicia Sesión</a></h6>
+  </div>
+</ion-content>

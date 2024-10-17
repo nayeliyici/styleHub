@@ -1,0 +1,33 @@
+.imgLogo {
+    margin-right: 10px;
+    width: 25px;
+}
+
+.titleLogo {
+    margin-left: 60px;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.iconPerson {
+    margin-top: 15px;
+    font-size: 30px;
+    margin-left: 80px;
+    color: #CC00FF;
+}
+
+.menuButton {
+    color: #CC00FF;
+    font-size: 30px;
+}
+
+ion-popover {
+    --width: 140px;
+}
+
+.pop {
+    --color: #CC00FF;
+    border: 1px solid #CC00FF; 
+    border-radius: 4px;
+}

@@ -1,0 +1,17 @@
+<ion-content [fullscreen]="true">
+  <ion-title class="title">STYLEHUB</ion-title>
+  <div class="m-5">
+    <ion-input type="email" fill="solid" label="Nombre" labelPlacement="floating" errorText="Nombre Invalido"
+      [(ngModel)]="userName" name></ion-input>
+    <ion-input class="mt-4" type="email" fill="solid" label="Email" labelPlacement="floating"
+      errorText="Correo Invalido" [(ngModel)]="userEmail" email></ion-input>
+    <ion-input class="mt-4" type="password" fill="solid" label="Contraseña" labelPlacement="floating"
+      errorText="Contraseña invalida" [(ngModel)]="userPassword"></ion-input>
+    <ion-button class="buttonSession" expand="block" fill="solid"
+      [disabled]="userEmail.length < 5 || userPassword.length < 8" routerLink="/login">
+      Registrar
+    </ion-button>
+    <h6 class="leyend">¿Ya tienes una cuenta? <a href="/login">Inicia Sesión</a></h6>
+    <h6 class="leyendTeam">Unete a nuestro equipo <a href="/register-worker">Unirme</a></h6>
+  </div>
+</ion-content>

@@ -1,0 +1,24 @@
+.icon-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.close {
+    font-size: 50px;
+    color: #c23434;
+    margin-left: 100px;
+}
+
+.check {
+    font-size: 50px;
+    color: #25952e;
+    margin-right: 100px;
+}
+
+.imgWorker {
+    width: 500px;
+    max-height: 300px;
+    object-fit: cover; 
+}
+

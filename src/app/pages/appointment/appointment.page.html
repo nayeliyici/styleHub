@@ -1,0 +1,19 @@
+<app-toolbar></app-toolbar>
+<ion-content [fullscreen]="true">
+  <div class="date">
+    <ion-datetime presentation="date" [highlightedDates]="highlightedDates" (ionChange)="onDateSelected($event.detail.value)"></ion-datetime>
+  </div>
+  <ion-card *ngIf="showCard" class="mt-4">
+    <ion-card-header>
+      <h2 *ngIf="isAdmin === 'user'">Barbería Lopez</h2>
+      <h2 *ngIf="isAdmin === 'worker'">Juan Perez Gomez</h2>
+    </ion-card-header>
+    <ion-card-content>
+      <h1>13:30 hrs, {{ selectedDate }}</h1>
+      <div class="icon-container">
+        <ion-icon name="close-circle-outline" class="close"></ion-icon>
+        <ion-icon name="checkmark-circle-outline" class="check"></ion-icon>
+      </div>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

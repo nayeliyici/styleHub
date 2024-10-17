@@ -1,0 +1,14 @@
+<app-toolbar></app-toolbar>
+<ion-content [fullscreen]="true">
+  <ion-segment color="dark">
+    <ion-segment-button value="dark">
+      <ion-label>Barbería</ion-label>
+    </ion-segment-button>
+    <ion-segment-button>
+      <ion-label>Manicura</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+  @for (worker of workers; track $index) {
+    <app-card-worker></app-card-worker>
+  }
+</ion-content>

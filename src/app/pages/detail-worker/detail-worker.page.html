@@ -1,0 +1,54 @@
+<app-toolbar></app-toolbar>
+<ion-content [fullscreen]="true">
+  <img src="https://i.pinimg.com/236x/ec/b9/34/ecb9348ae4948ff98a4c175068918e6f.jpg" class="imgWorker">
+  <ion-title class="title mt-3">Carlos Barber</ion-title>
+  <div class="rating-container">
+    <ion-icon name="star" class="iconStart"></ion-icon>
+    <span>4.5</span>
+    <h5>$$$</h5>
+  </div>
+  <p class="domicilio">San Antonio de la Cal, Oaxaca de Juarez, Oaxaca</p>
+  <h3 class="ms-3 mt-5">Servicios</h3>
+  <div id="open-modal" expand="block">
+    @for (item of items; track $index) {
+      <ion-card>
+        <ion-grid>
+          <ion-row>
+            <ion-col class="containerCard">
+              <ion-card-header>
+                <ion-card-title>Fade alto con french crop</ion-card-title>
+              </ion-card-header>
+              <ion-card-content>
+                <p> MX $200.00 </p>
+              </ion-card-content>
+            </ion-col>
+            <ion-col>
+              <img src="https://blog.newoldman.com.br/wp-content/uploads/2023/08/Corte-de-Cabelo-French-Crop-Masculino-5.jpg" class="imgService">
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-card>
+    }
+  </div>
+  <ion-modal trigger="open-modal">
+    <ng-template>
+      <ion-header>
+        <ion-toolbar>
+          <ion-buttons slot="start">
+            <ion-button (click)="cancel()">Cancelar</ion-button>
+          </ion-buttons>
+          <ion-title style="margin-left: 50px;">Agendar Cita</ion-title>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content class="ion-padding">
+        <h5 class="ms-5 my-3">Seleccione el día y hora</h5>
+        <ion-datetime locale="es-ES" class="calendar" minuteValues="0,15,30,45" dayValues="5,10,15,20,25,30">
+          <span slot="time-label">Hora</span>
+        </ion-datetime>
+        <div class="button-container">
+          <ion-button class="reqDate" (click)="cancel()">Solicitar Cita</ion-button>
+        </div>
+      </ion-content>
+    </ng-template>
+  </ion-modal>
+</ion-content>

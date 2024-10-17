@@ -1,0 +1,40 @@
+<app-toolbar></app-toolbar>
+<ion-content [fullscreen]="true">
+  <ion-title class="title">BIENVENIDOS A STYLEHUB</ion-title>
+  <h5 class="subtitle">Tu estilo a un toque de distancia</h5>
+  <div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://www.peluker.com/blog/wp-content/uploads/2024/03/%C2%BFcuanto-cuesta-una-barberia.jpeg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://www.102nueve.com/wp-content/uploads/2023/12/manicura-spa-1024x570.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://joseppons.com/formacion/wp-content/uploads/2021/05/estudiar-barberia.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <p>
+    Bienvenidos a StyleHub, tu nueva forma de agendar citas con barberos y manicuristas de confianza. Sabemos lo importante que es el cuidado personal y lo difícil que puede ser encontrar el tiempo adecuado para hacerlo. Por eso, hemos creado una plataforma que facilita el proceso de reservar citas con los mejores profesionales del estilo y el cuidado personal.
+  </p>
+  <p>En StyleHub, puedes explorar una amplia variedad de barberos y manicuristas cerca de ti, ver sus perfiles, consultar sus calificaciones y agendar fácilmente tu próxima cita, todo desde la comodidad de tu móvil. Ya sea que busques un corte de cabello de tendencia o un diseño de uñas único, nuestros profesionales están listos para ayudarte a destacar.
+  </p>
+  <p>Nuestra misión es conectar a los usuarios con expertos en belleza de manera rápida y sencilla, brindando acceso a servicios de alta calidad en cualquier momento. Además, puedes gestionar todas tus citas desde un solo lugar, recibir recordatorios y disfrutar de la comodidad de tener el control total sobre tu agenda.
+  </p>
+  <P>StyleHub, donde el estilo se encuentra con la conveniencia.
+  </P>
+  <div>
+    <ion-button class="buttonSession" expand="block" fill="solid" *ngIf="rol === 'admin'">
+      Editar
+    </ion-button>
+  </div>
+</ion-content>
