@@ -1,13 +1,17 @@
-<ion-content [fullscreen]="true">
-  <ion-title class="title">STYLEHUB</ion-title>
+<ion-content [fullscreen]="true" class="background-video">
+  <video autoplay muted class="video-bg">
+    <source src="../../../assets/animation/logo4.mp4" type="video/mp4">
+  </video>
+  <ion-title class="title"></ion-title>
   <div class="m-5">
-    <ion-input type="email" fill="solid" label="Email" labelPlacement="floating" errorText="Correo Invalido"
+    <ion-input color="tertiary" type="email" fill="solid" label="Email" labelPlacement="floating" errorText="Correo Invalido"
       [(ngModel)]="userEmail" email></ion-input>
-    <ion-input class="mt-4" type="password" fill="solid" label="Contraseña" labelPlacement="floating"
+    <ion-input color="tertiary" class="mt-4" type="password" fill="solid" label="Contraseña" labelPlacement="floating"
       errorText="Contraseña invalida" [(ngModel)]="userPassword"></ion-input>
-    <ion-button (click)="login()" class="buttonSession" expand="block" fill="solid" [disabled]="userEmail.length < 3 || userPassword.length < 8">
+    <ion-button (click)="login()" class="buttonSession" expand="block" fill="solid"
+      [disabled]="userEmail.length < 3 || userPassword.length < 8">
       Iniciar Sesión
     </ion-button>
-    <h6 class="leyend">¿No tienes una cuenta? <a href="/register">Registrate</a></h6>
+    <h6 class="leyend">¿No tienes una cuenta?<a href="/register">Regístrate</a></h6>
   </div>
 </ion-content>
